@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_edit"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="16dp"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:paddingTop="16dp"
+tools:context="com.wey46.mcontacts.EditActivity">
+
+    <Button
+        android:id="@+id/buttonDelet"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Delete"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/itemImage"
+        app:layout_constraintTop_toTopOf="@+id/buttonEdit" />
+
+    <EditText
+        android:id="@+id/ed2Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="Country: USA"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/itemImage"
+        app:layout_constraintTop_toBottomOf="@+id/ed2City" />
+
+    <EditText
+        android:id="@+id/ed2Zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="ZIP: 15213"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ed2Country"
+        app:layout_constraintTop_toBottomOf="@+id/ed2State" />
+
+    <EditText
+        android:id="@+id/ed2State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:hint="State: PA"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ed2City"
+        app:layout_constraintTop_toTopOf="@+id/ed2City" />
+
+    <EditText
+        android:id="@+id/ed2City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="City: Pittsburgh"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/itemImage"
+        app:layout_constraintTop_toBottomOf="@+id/ed2Address1" />
+
+    <EditText
+        android:id="@+id/ed2Address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="Address1: this is address line 1"
+        android:inputType="text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/itemImage"
+        app:layout_constraintTop_toBottomOf="@+id/ed2Email" />
+
+
+    <EditText
+        android:id="@+id/ed2Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="Email: example@gmail.com"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/itemImage"
+        app:layout_constraintTop_toBottomOf="@+id/ed2Phone" />
+
+<TextView
+    android:id="@+id/tv2Fname"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:layout_marginTop="24dp"
+    android:text="First Name"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="@+id/tv2Lname"
+    app:layout_constraintTop_toBottomOf="@+id/tv2Lname"
+    tools:ignore="HardcodedText" />
+
+<TextView
+    android:id="@+id/tv2Lname"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="38dp"
+    android:text="Last Name"
+    android:textAllCaps="false"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/itemImage"
+    app:layout_constraintTop_toTopOf="@+id/itemImage"
+    tools:ignore="HardcodedText" />
+
+<ImageView
+    android:id="@+id/itemImage"
+    android:layout_width="175dp"
+    android:layout_height="175dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:contentDescription="User image"
+    android:scaleType="fitCenter"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/defaultimg"
+    tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/ed2Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="Tel: 1234567890"
+        android:inputType="phone"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/itemImage"
+        app:layout_constraintTop_toBottomOf="@+id/itemImage" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Done"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/itemImage"
+        app:layout_constraintTop_toBottomOf="@+id/ed2Country" />
+
+</android.support.constraint.ConstraintLayout>
+
+

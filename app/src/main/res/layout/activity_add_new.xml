@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_add_new"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="16dp"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:paddingTop="16dp"
+tools:context="com.wey46.mcontacts.AddNewActivity">
+
+    <EditText
+        android:id="@+id/etZip"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:inputType="text|number"
+        android:text="Zip"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/etState"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/etCity"
+        app:layout_constraintTop_toBottomOf="@+id/etState" />
+
+    <EditText
+        android:id="@+id/etCountry"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:inputType="text"
+        android:text="Country"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etCity"
+        app:layout_constraintTop_toBottomOf="@+id/etCity" />
+
+    <EditText
+        android:id="@+id/etState"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:inputType="text"
+        android:text="State"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/etAddress1"
+        app:layout_constraintStart_toEndOf="@+id/etCity"
+        app:layout_constraintTop_toTopOf="@+id/etCity" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:inputType="text"
+        android:text="City"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/etAddress1"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress1" />
+
+    <EditText
+        android:id="@+id/etAddress1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:inputType="text"
+        android:text="Address line 1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/etEmail"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:inputType="textEmailAddress"
+        android:text="example@email.com"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/etPhone"
+        app:layout_constraintStart_toStartOf="@+id/itemImage"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <EditText
+        android:id="@+id/etFname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/etLname"
+        app:layout_constraintStart_toStartOf="@+id/etLname"
+        app:layout_constraintTop_toBottomOf="@+id/etLname"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etLname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:inputType="textPersonName"
+        android:text="Last Name"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/itemImage"
+        app:layout_constraintTop_toTopOf="@+id/itemImage"
+        tools:ignore="HardcodedText" />
+
+<ImageView
+    android:id="@+id/itemImage"
+    android:layout_width="175dp"
+    android:layout_height="175dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:contentDescription="User image"
+    android:scaleType="fitCenter"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/defaultimg"
+    tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="24dp"
+        android:inputType="phone"
+        android:text="Phone Number"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/etFname"
+        app:layout_constraintStart_toStartOf="@+id/itemImage"
+        app:layout_constraintTop_toBottomOf="@+id/itemImage" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:elevation="0dp"
+        android:text="Add Contact"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+

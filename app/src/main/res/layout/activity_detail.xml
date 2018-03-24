@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.wey46.mcontacts.DetailActivity">
+
+    <TextView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Country: USA"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvZip"
+        app:layout_constraintTop_toBottomOf="@+id/tvState" />
+
+    <TextView
+        android:id="@+id/tvZip"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="ZIP: 15213"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCity"
+        app:layout_constraintTop_toBottomOf="@+id/tvCity" />
+
+    <TextView
+        android:id="@+id/tvState"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:text="State: PA"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvCity"
+        app:layout_constraintTop_toTopOf="@+id/tvCity" />
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="City: Pittsburgh"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvAddress2"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress2" />
+
+    <TextView
+        android:id="@+id/tvAddress1"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Address1: this is address line 1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/itemImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Address2: this is address line 2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/tvAddress1"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress1" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Email: example@gmail.com"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/itemImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+    <TextView
+        android:id="@+id/tvFname"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:text="First Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvLname"
+        app:layout_constraintTop_toBottomOf="@+id/tvLname"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvLname"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="38dp"
+        android:text="Last Name"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/itemImage"
+        app:layout_constraintTop_toTopOf="@+id/itemImage"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="User image"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/defaultimg"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:text="Tel: 1234567890"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/itemImage"
+        app:layout_constraintTop_toBottomOf="@+id/itemImage" />
+
+</android.support.constraint.ConstraintLayout>
+
